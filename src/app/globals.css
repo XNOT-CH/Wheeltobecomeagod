@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #120f1c;
+  --color-surface: #1d1830;
+  --color-surface-2: #241d3d;
+  --color-ink: #efe9f7;
+  --color-muted: #9a90b3;
+  --color-gold: #d7a44c;
+  --color-gold-soft: #8a6b2e;
+  --color-crimson: #c1495a;
+  --color-sage: #6f9c7e;
+  --color-line: rgba(215, 164, 76, 0.18);
+  --color-shadow: rgba(6, 4, 14, 0.55);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f7f2e7;
+    --color-surface: #fffdf7;
+    --color-surface-2: #f0e6d2;
+    --color-ink: #241c33;
+    --color-muted: #756a8d;
+    --color-gold: #a9781f;
+    --color-gold-soft: #c9ab6a;
+    --color-crimson: #9c3347;
+    --color-sage: #4c7b5c;
+    --color-line: rgba(36, 28, 51, 0.14);
+    --color-shadow: rgba(120, 100, 60, 0.18);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-crimson: var(--color-crimson);
+  --color-sage: var(--color-sage);
+  --color-line: var(--color-line);
+  --color-shadow: var(--color-shadow);
+  --font-display: var(--font-cinzel);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.wheel-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
